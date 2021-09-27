@@ -15,11 +15,17 @@
         <p class="description">
             Enter the bill amount and cash given by the coustmer and know minimum number of notes to return
         </p>
+
         <label for="billAmount">Bill Amount : </label>
-        <input id="billAmount" type="text">
+        <input id="billAmount" type="number">
+
         <label for="cashGiven">Cash Given</label>
-        <input type="text" id="cashGiven">
+        <input type="number" id="cashGiven">
+
+        <p id="errorMessage"></p>
+
         <table class="changeTable">
+            <button id="check">Check</button>
             <caption>Return Change</caption>
             <tr>
                 <th>No of Notes</th>
